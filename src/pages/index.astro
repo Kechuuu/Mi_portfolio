@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import SocialPill from "../icons/SocialPill.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import MailIcon from "../icons/Mail.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout 
+title="Portfolio de Armando"
+description="Contrata a Armando para tu mejora continua">
+  <main>
+    <section class="w-full mx-auto lg:w-[740px] py-44">
+      <img 
+        class="rounded-full size-16" 
+        src="image/mi-perfil.jpg"  
+        alt="Foto perfil"
+    />
+      <h1
+        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
+      >
+        Soy Jesus Armando
+        <a
+          href="https://www.linkedin.com/in/jesus-armando-gonzalez-mu%C3%B1oz-929455299/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex justify-center items-center"
+        >
+          <Badge>About me</Badge>
+        </a>
+      </h1>
+
+
+      <h2 class="text-2xl text wrap">
+        <span>2 años de experiencia.</span>
+        <span class="text-yellow-300 opacity-80"
+          >Desarrollador Hardware y Software. </span
+        >
+        <span class="">En busqueda de la mejora continua.</span>
+        <span class=" text-purple-300/90">De Sinaloa Mexico</span>
+
+      </h2>
+      <nav class="flex gap-x-2 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/jesus-armando-gonzalez-mu%C3%B1oz-929455299/">
+          <LinkedIn class="w-6 h-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Kechuuu">
+          <GitHubIcon class="size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:jesuzalez2015@gmail.com">
+          <MailIcon class="w-6 h-6" />
+          jesuzalez2015@gmail.com
+        </SocialPill>
+      </nav>
+
+    </section>
+  </main>
+</Layout>

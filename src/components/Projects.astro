@@ -33,8 +33,9 @@ const PROJECTSHARDWARE = [
   PROJECTSHARDWARE.map(({ title, description, tags, image }) => (
     <article>
       <h3 class = "text-lg font-semibold text-purple-400 mb-2 text-pretty">{title}</h3>
-      <p class = "text-lg mb-4">{description}</p>
-      <ul>
+      <p class = "text-lg mb-4 text-white">{description}</p>
+      <ul class = "text-white">
+        
         {tags.map((tag) => (
           <li>{tag}</li>
         ))}

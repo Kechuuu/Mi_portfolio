@@ -1,7 +1,7 @@
 ---
 import '@fontsource/poppins/500.css';
 import Header from "../components/Header.astro";
-
+import Footer from "../icons/Footer.astro";
 interface Props {
 	title: string;
 	description: string;
@@ -21,7 +21,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body >
 		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 
 	
@@ -31,6 +31,8 @@ const { title } = Astro.props;
 
 		</header>
 		<slot />
+		<Footer 
+		/>
 	</body>
 </html>
 <style is:global>
@@ -41,13 +43,21 @@ const { title } = Astro.props;
 	html {
 		
 		font-family: 'Poppins', sans-serif;
+		scroll-behavior: smooth;
 	}
 	body {
 		display: flex;
 		flex-direction: column;
-		background: #050505; 
-		min-height: 100vh;
+		background: #050505;
+		
 
+		
+
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html{
+			scroll-behavior: auto;
+		}
 	}
 	
 </style>

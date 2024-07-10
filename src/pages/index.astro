@@ -22,8 +22,8 @@ import Card from "../components/Card.astro";
   <main class = "px4">
     <SectionContainer class="py-40 pb-20 flex flex-col items-center" id="top">
       <img 
-      class="rounded-full w-32 h-32 mb-6" 
-      src="image/mi-perfil.jpg"  
+      class="rounded-full w-35 h-32 mb-6" 
+      src="image/mi-perfil.png"  
       alt="Foto perfil"
     />
       <h1
@@ -36,7 +36,7 @@ import Card from "../components/Card.astro";
           rel="noopener noreferrer"
           class="flex justify-center items-center"
         >
-          <Badge>About me</Badge>
+          <Badge>Sobre mi</Badge>
         </a>
       </h1>
 
@@ -74,14 +74,15 @@ import Card from "../components/Card.astro";
 
     <SectionContainer id="hardware">
       <h2 class="text-2xl font-semibold mb-6 text-white flex gap-x-3 items-center">
-        <Code class="size 6" />
+        
+        <Hardwareico class="size 6" />
           Proyectos Hardware</h2>
       <Projects/>
       
     </SectionContainer>
     <SectionContainer id="software">
       <h2 class="text-2xl font-semibold mb-6 text-white flex gap-x-3 items-center">
-        <Hardwareico class="size 6" />
+        <Code class="size 6" />
           Proyectos Software</h2>
       <ProjectsSoftware/>
       
